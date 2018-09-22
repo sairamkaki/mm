@@ -19,4 +19,14 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AuthorRegister</display-name>
+    <servlet-name>AuthorRegister</servlet-name>
+    <servlet-class>com.om.controllers.AuthorRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthorRegister</servlet-name>
+    <url-pattern>/authorreg</url-pattern>
+  </servlet-mapping>
 </web-app>
