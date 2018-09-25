@@ -16,10 +16,6 @@ public class AuthorDAO {
 	{
 		Connection con=DatabaseConnection.getCon();
 		PreparedStatement ps=con.prepareStatement("insert into authors values(?,?,?,?,?)");
-		
-		
-		
-		
 		ps.setString(1, a.getUsername());
 		ps.setString(2, a.getFullname());
 		ps.setString(3, a.getPassword());
