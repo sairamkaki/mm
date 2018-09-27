@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
 
-<style type="text/css">
-
-
-body {
-	
-	
-	background-color: maroon;
-	color: white;
-	
-	
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-
-
-form {
-	
-	background-color: pink;
-	
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
-
-
-input {
-	font-size: 15px;
-	font-family: verdana;
-	font-style: bold;
+button:hover {
+    opacity: 0.8;
 }
 
-.formdiv{
-
-height: auto;
-width: 280px;
-
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
 }
 
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
 
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
 
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
 </style>
-
-
-</style>
-
-
 </head>
 <body>
 
-
-
-<div class="forms">
-<fieldset>
-
-
-<label>Login Page</label>
+<h2>Login Form</h2>
 
 <form action="login" method="post">
+  <div class="imgcontainer">
+    <img src="Profile.jpg" alt="Avatar" class="avatar">
+  </div>
 
-<table>
-<tr>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-<td> Email:</td>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-
-<td><input type="email" name="email"></td>
-</tr>
-
-
-<tr>
-
-<td>Password:</td>
-
-
-<td><input type="password" name="password"></td>
-</tr>
-
-
-
-<tr>
-
-
-
-
-
-<td colspan="2" align="center"><input type="submit" value="Login">
-<input type="reset" value="Reset">
-
-</td>
-
-</tr>
-
-
-
-<tr>
-
-
-
-
-
-<td colspan="2" align="center">
-
-New Author?<br>
-<a href="AurhorRegistration.html" style="text-decoration: none;color: white;">Register Here</a>
-
-</td>
-
-</tr>
-
-</table>
-
-
-
-
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
 </form>
-
-
-</fieldset>
-</div>
-
-
 
 </body>
 </html>
