@@ -8,32 +8,35 @@
 
 
 <script type="text/javascript">
+	function validateAuthor() {
+		
+		if (document.author.fname.value== "") {
+			document.getElementById("fname1").innerHTML = "Please Fill This Field Dude";
 
+			return false;
+		} 
+		if (document.author.uname.value== "") {
+			document.getElementById("uname1").innerHTML = "Please Fill This Field Dude";
 
-function validateAuthor() {
+			return false;
+		} 
+		if (document.author.email.value== "") {
+			document.getElementById("email1").innerHTML = "Please Fill This Field Dude";
 
-var fname=document.author.fname.value;
-if(fname==" ")
-	{
-	document.getElementById("fname").innerHTML="Please Fill This Field Dude";
-	
-	return false;
+			return false;
+		}
+		if (document.author.mobile.value== "") {
+			document.getElementById("mobile1").innerHTML = "Please Fill This Field Dude";
+
+			return false;
+		} 
+		if (document.author.pass.value== " ") {
+			document.getElementById("pass1").innerHTML = "Please Fill This Field Dude";
+
+			return false;
+		} 
+
 	}
-else
-	{
-	return true;
-	}
-	
-
-	
-	
-}
-
-
-
-
-
-
 </script>
 
 
@@ -43,26 +46,31 @@ else
 
 
 <style type="text/css">
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #E8E1E1;
+}
 
+li {
+	float: left;
+	color: black;
+}
 
-body {
-	
-	
-	background-color: maroon;
+li a {
+	display: block;
 	color: white;
-	
-	
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: black;
 }
 
-
-
-form {
-	
-	background-color: pink;
-	
+li a:hover {
+	background-color: #837EC1;
 }
-
-
 
 input {
 	font-size: 15px;
@@ -70,162 +78,148 @@ input {
 	font-style: bold;
 }
 
-.formdiv{
-
-height: auto;
-width: 280px;
-
+.formdiv {
+	height: auto;
+	width: 280px;
 }
 
+table {
+	width: 50%;
+	padding: 20px 30px;
+	margin: 100px 100px 150px -10px;
+	box-sizing: border-box;
+	border: none;
+	background-color: #E8E1E1;
+	color: black;
+}
 
+input {
+	font-size: 15px;
+	font-family: verdana;
+	font-style: bold;
+}
 
+.formdiv {
+	height: auto;
+	width: 280px;
+}
 </style>
 
 
 
 </head>
 <body>
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="Login.html">Login</a></li>
+		<li><a href="AurhorRegistration.html">Sign-up</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
 
-<div align="center">
 
+	<div align="center">
 
-<h1>Author Registration</h1>
 
-<div class="formdiv">
+		<h1>Author Registration</h1>
 
+		<div class="formdiv">
 
-<form action="authorreg" name="author" onsubmit="return validateAuthor()">
 
-<table>
+			<form action="authorreg" name="author" onsubmit="return(validateAuthor());">
 
-<tr>
+				<table>
 
-<td>
+					<tr>
 
-Full Name:
+						<td>Full Name:</td>
 
-</td>
+						<td><input type="text" name="fname"> 
+						 <span id="fname1"></span></td>
+					</tr>
 
-<td>
-<input type="text" name="fname">
-<br>
-<span id="fanme"></span>
 
-</td>
-</tr>
+					<tr>
 
+						<td>User Name:</td>
 
-<tr>
+						<td><input type="text" name="uname"> 
+						 <span id="uname1"></span></td>
+					</tr>
 
-<td>
 
-User  Name:
+					<tr>
 
-</td>
+						<td>Password:</td>
 
-<td>
-<input type="text" name="uname">
+						<td><input type="password" name="password"> 
+							<span id="pass1"></span></td>
+					</tr>
 
-</td>
-</tr>
+					<tr>
 
+						<td>Email:</td>
 
-<tr>
+						<td><input type="email" name="email"> 
+						<span id="email1"></span></td>
+					</tr>
 
-<td>
+					<tr>
 
-Password:
+						<td>Mobile:</td>
 
-</td>
+						<td><input type="text" name="mobile"> <br>
+						
+						 <span id="mobile1"></span></td>
+					</tr>
 
-<td>
-<input type="password" name="password">
 
-</td>
-</tr>
 
-<tr>
+					<tr>
 
-<td>
 
-Email:
 
-</td>
 
-<td>
-<input type="email" name="email">
+						<td colspan="2" align="center"><input type="submit"
+							value="SignUp"></td>
+					</tr>
 
-</td>
-</tr>
 
-<tr>
 
-<td>
+					<tr>
 
-Mobile:
 
-</td>
 
-<td>
-<input type="text" name="mobile">
+						<td colspan="2" align="center">Already Registered? <br>
+							<a href="Login.html">Login Here</a>
 
-</td>
-</tr>
 
 
 
-<tr>
 
+						</td>
+					</tr>
 
 
+				</table>
 
-<td colspan="2" align="center">
-<input type="submit" value="SignUp">
 
-</td>
-</tr>
 
 
 
-<tr>
 
 
 
-<td colspan="2" align="center">
+			</form>
 
-Already Registered?
-<br>
-<a href="Login.html">Login Here</a>
 
 
 
 
+		</div>
 
-</td>
-</tr>
 
 
-</table>
-
-
-
-
-
-
-
-
-</form>
-
-
-
-
-
-</div>
-
-
-
-</div>
-
+	</div>
 
 
 

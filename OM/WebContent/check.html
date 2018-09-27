@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validate()
+{
+	var s=document.f1.uname.value;
+	if (s== "") 
+	{
+		alert("Enter U");
+		document.getElementById("loginid").innerHTML = "Please Fill This Field";
+		return false;
+	}
+	
+	
+}
+</script>
+</head>
+<body>
+<form method="post" action="Home" name="f1" onsubmit="return(validate());">
+
+
+
+<input type="text" name="uname">
+<span id="loginid"></span>
+<input type="submit" value="Go">
+
+
+
+
+
+
+</form>
+
+
+</body>
+</html>

@@ -6,25 +6,33 @@
 
 <style type="text/css">
 
-
-body {
-	
-	
-	background-color: maroon;
-	color: white;
-	
-	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #E8E1E1;
 }
 
-
-
-form {
-	
-	background-color: pink;
-	
+li {
+    float: left;
+    color:black;
 }
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    
+}
 
+li a:hover {
+    background-color: #837EC1;
+    
+}
 
 input {
 	font-size: 15px;
@@ -38,10 +46,16 @@ height: auto;
 width: 280px;
 
 }
+table {
+    width: 30%;
+    padding: 20px 30px;
+    margin: 100px 100px 150px 440px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #E8E1E1;
+    color: black;
+}
 
-
-
-</style>
 
 
 </style>
@@ -49,18 +63,23 @@ width: 280px;
 
 </head>
 <body>
-
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Login.html">Login</a></li>
+  <li><a href="AurhorRegistration.html">Sign-up</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
 
 <div class="forms">
 <fieldset>
 
 
-<label>Login Page</label>
+<h1 align="center">Login Page</h1>
 
 <form action="login" method="post">
 
-<table>
+<table align="center">
 <tr>
 
 <td> Email:</td>
@@ -115,7 +134,7 @@ New Author?<br>
 
 
 
-</form>
+</form> 
 
 
 </fieldset>

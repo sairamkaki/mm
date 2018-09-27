@@ -30,7 +30,7 @@ public class EmailSender {
 		
 		String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 		
-		String subject="Welcome Online Magzne";
+		String subject="Welcome Online Magazine";
 		
 		
 		
