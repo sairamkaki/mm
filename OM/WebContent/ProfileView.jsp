@@ -38,7 +38,7 @@ rs=ps.executeQuery();
 
 while(rs.next())
 {
-	
+
 %>
 <table>
 <tr>

@@ -15,8 +15,6 @@
 <%=request.getParameter("mess") %>
 
 
-
-
 </div>
 
 

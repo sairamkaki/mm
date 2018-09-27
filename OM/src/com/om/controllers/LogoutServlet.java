@@ -40,6 +40,7 @@ public class LogoutServlet extends HttpServlet {
 		rd.forward(request, response);
 		}
 		catch(Exception e)
+		
 		{
 			out.println("you must login first");
 			rd=request.getRequestDispatcher("Login.html");

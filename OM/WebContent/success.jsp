@@ -14,7 +14,6 @@
 <a href='Login.html'>Login Here</a>
 
 
-
 <img src="images.jpg" height="100" width="200">
 
 
