@@ -47,6 +47,8 @@ public class UploadServlet extends HttpServlet {
 			username=rs.getString("username");
 		}
 		PrintWriter out = response.getWriter();  
+		
+		
 		          
 		MultipartRequest m=new MultipartRequest(request,"d://images//"+username+".jpg");  
 		System.out.print("successfully uploaded");  
