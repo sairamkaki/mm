@@ -1,4 +1,5 @@
-package com.om.bo;
+package com.om.bo; 
+
 
 import java.sql.SQLException;
 

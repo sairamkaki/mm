@@ -1,4 +1,5 @@
 package com.om.dbconnection;
+
 import java.sql.*;
 public class DatabaseConnection {
 
