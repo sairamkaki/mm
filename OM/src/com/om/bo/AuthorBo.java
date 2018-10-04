@@ -11,7 +11,7 @@ public class AuthorBo {
 	
 
 
-	public boolean createAuthor(Author a) throws SQLException
+public boolean createAuthor(Author a) throws SQLException
 	{
 		
 		
