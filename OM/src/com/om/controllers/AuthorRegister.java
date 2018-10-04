@@ -39,12 +39,8 @@ public class AuthorRegister extends HttpServlet {
 		password=request.getParameter("password");
 		email=request.getParameter("email");
 		mobile=request.getParameter("mobile");
-		Author author=new Author();
-		author.setFullname(fullname);
-		author.setMobile(mobile);
-		author.setEmail(email);
-		author.setPassword(password);
-		author.setUsername(username);
+		Author author=new Author(username, fullname, password, email, mobile);
+		
 		
 		AuthorBo authorbo=new AuthorBo();
 		boolean validate;
@@ -53,7 +49,7 @@ public class AuthorRegister extends HttpServlet {
 
 			String message="Succcess Dude     "+username.toUpperCase();
 			
-			String failuremessage="Ooops..............Dude,    Check Details";
+			String failuremessage="Ooops..............Dsude,    Check Details";
 
 		
 		if(validate==true)
@@ -71,12 +67,14 @@ public class AuthorRegister extends HttpServlet {
 			
 			
 			
-response.sendRedirect("success.jsp?mess="+message);
+			RequestDispatcher rd=request.getRequestDispatcher("Home1.html");
+			rd.forward(request, response);
 			
 		}
 		else
 		{
-			response.sendRedirect("failure.jsp?mess="+failuremessage);
+			RequestDispatcher rd=request.getRequestDispatcher("Home.html");
+			rd.forward(request, response);
 			
 		}
 		} catch (SQLException e) {

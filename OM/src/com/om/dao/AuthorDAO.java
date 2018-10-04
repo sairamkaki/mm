@@ -15,7 +15,7 @@ public class AuthorDAO {
 	public static  boolean registerAuthor(Author a) throws SQLException
 	{
 		Connection con=DatabaseConnection.getCon();
-		PreparedStatement ps=con.prepareStatement("insert into authors values(?,?,?,?,?)");
+		PreparedStatement ps=con.prepareStatement("insert into authors(fullname,username,password,email,mobile) values(?,?,?,?,?)");
 		ps.setString(1, a.getUsername());
 		ps.setString(2, a.getFullname());
 		ps.setString(3, a.getPassword());

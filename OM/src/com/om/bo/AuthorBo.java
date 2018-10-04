@@ -20,7 +20,6 @@ public class AuthorBo {
 		
 		
 		return AuthorDAO.registerAuthor(a);
-		
 	}
 	
 	
