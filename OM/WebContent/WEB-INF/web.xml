@@ -59,4 +59,14 @@
     <servlet-name>UploadServlet</servlet-name>
     <url-pattern>/UploadServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateProfile</display-name>
+    <servlet-name>UpdateProfile</servlet-name>
+    <servlet-class>com.om.controllers.UpdateProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProfile</servlet-name>
+    <url-pattern>/UpdateProfile</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -28,7 +28,8 @@ public class LoginServlet extends HttpServlet {
 		    String email=request.getParameter("email");
 		    String password=request.getParameter("password");
 		    
-		    
+		    System.out.println(email);
+		    System.out.println(password);
 		    PrintWriter out=response.getWriter();
 		    HttpSession se =request.getSession();
 		    AuthorLoginDAO a=new AuthorLoginDAO();
