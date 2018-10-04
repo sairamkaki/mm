@@ -75,7 +75,7 @@ public class UploadServlet extends HttpServlet {
 	        String message = null;  // message will be sent back to client
 	         
 	        try {
-	        	
+	        
 	            // connects to the database
 	        	 con=DatabaseConnection.getCon();
 	 

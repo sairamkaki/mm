@@ -29,7 +29,7 @@ public class ProfileUpdate {
 			int rs=ps.executeUpdate();
 			return rs;
 		}
-		
+	
 		else if(s.equals("password"))
 		{
 			ps=con.prepareStatement("update authors set password=? where email=?");
